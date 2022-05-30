@@ -1,93 +1,92 @@
+html{
+    background-color: #E3E2DF;
+    font-family: 'Teko', sans-serif;
+}
+/* #page-container{
+    position: relative;
+} */
+.logo img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 8px;
+    left: 75px;
+}
+.navbar_btn{
+    position: absolute;
+    right: 90px;
+    top: 26px;
+    margin: auto;
+}
+.navbar_btn li{
+    list-style-type: none;
+    display: inline;
+    margin-right: 10px;
+}
+.navbar_btn a{
+    text-decoration: none ;
+    color: #5D001E;
+    /* border: solid 1px #5D001E; */
+    padding: 10px 20px ;
+    font-size: 25px;
+}
+.navbar_btn a:hover{
+    color: #EE4C7C;
+}
+.work{
+    margin-top: 140px;
+    margin-left: 130px;
+    font-size: 20px;
+}
 
-
-html, body {
-    margin: 0;
-    padding: 0;
-  }
-  
-html {
-    font-size: 10px;
-    background-color:  #1A1A1C;
-  }
-header{
-    background-color: #6F2232;
-    margin-bottom: 10px;
-    display: flex;
-    flex-flow: row wrap;
-  }
-  header a{
-      font-size: larger;
-      border-style: solid;
-      border-color: #C3083F;
-      background-color: #C3083F;
-      width: 50%;
-      margin: 10px;
-      padding: 10px;
-  }
-body{
-    width: 70%;
-    min-width: 800px;
-    margin: 0 auto;
-  }
-aside {
-    flex: 1;
-    margin-left: 10px;
-    padding: 1%;
-  }
-main{
-    background-color: #940741;
-    display: flex;
-  }
-footer{
-    background-color: #6F2232;
-  }
-
-article, section {
-    flex: 4;
-  }
-nav {
-    height: 50px;
-    flex: 100%;
-    display: flex;
-    }
-aside {
-    flex: 1;
-    margin-left: 10px;
-    padding: 1%;
-    }
-aside a {
+.headings{
+    font-size: 50px;
+    text-decoration: none;
+    color: #5D001E;
     display: block;
-    float: left;
-    width: 50%;
-    border-style:solid;
-    border-color:#940741;
-    color: #000;
-    font-size: large;
-    
-    }
-article,aside{
-    background-color:#C3083F ;
-}    
-/*............For a tag...............*/
-a:link {
-    text-decoration: none;
-    color: #1A1A1C;
-  }
-  
-  a:visited {
-    text-decoration: none;
-    color: aliceblue;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-    color: #940741;
-  }
-  
-  a:active {
-    text-decoration: underline;
-    color: #C3083F;
-  }
-li{
-    display: inline-block;
+}
+.headings:hover{
+    color: #EE4C7C;
+}
+.pixel{
+    width: 1000px;
+    height: 700px;
+    margin-left: 84px;
+    margin-top: 34px;
+    position: relative;
+}
+
+#moon{
+    width: 250px;
+    height: 500px;
+    position: absolute;
+    top: 50px;
+    left: 158px;
+}
+#cloud{
+    width: 503px;
+    height: 250px;
+    position: absolute;
+    top: 50px;
+    left: 415px;
+
+}
+
+
+.gifs{
+    position: absolute;
+   
+}
+#gif{
+    top: 81px;
+    left: 189px;
+}
+#gif2{
+    top: 81px;
+    left: 606px;
+}
+#footer{
+    position: absolute;
+    bottom: 0;
+    height: 20px;
 }
