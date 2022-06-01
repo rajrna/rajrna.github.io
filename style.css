@@ -1,6 +1,7 @@
+
 html{
-    background-color: #E3E2DF;
     font-family: 'Teko', sans-serif;
+    background-color: #1D1B1D;
 }
 .head{
     position: relative;
@@ -26,7 +27,7 @@ html{
 }
 .navbar_btn a{
     text-decoration: none ;
-    color: #5D001E;
+    color: #FDFCFE;
     /* border: solid 1px #5D001E; */
     padding: 10px 20px ;
     font-size: 25px;
@@ -34,21 +35,85 @@ html{
 .navbar_btn a:hover{
     color: #EE4C7C;
 }
+.navbar_btn a:active{
+    background-color:#5D001E ;
+    color: #EE4C7C;
+}
 .content{
     position: relative;
     height: auto;
+    background-color: #1D1B1D;
 }
 .work{
     margin-top: 140px;
     margin-left: 130px;
     font-size: 20px;
-    
 }
 
+.welcome_txt{
+    margin-left: -360px;
+    color: #FDFCFE;
+    font-size: 50px;
+    height: 500px;
+    width: 1700px;
+
+    background-image: url(./Welcome\ banner.jpeg);
+    background-position: left;
+   
+    
+}
+.welcome_txt #first{
+    margin-left: 300px;
+}
+.welcome_txt #second{
+    margin-top: -173px;
+    margin-left: 643px;
+}
+.welcome_txt #third{
+    margin-top: -171px;
+    margin-left: 853px;
+}
+.about{
+    color: #FDFCFE;
+    font-size: 50px;
+    position: relative;
+    height:600px ;
+}
+#profile{
+    width: 418px;
+    height: 402px;
+    position: absolute;
+    top: 133px;
+    left: 183px;
+    border-radius: 50%;
+}
+#profile:hover{
+    transform: scale(1.2);
+}
+.titles:hover{
+    transform: scale(1.1);
+}
+#name{
+    margin-left: 635px;
+    margin-top: -25px;
+}
+#title{
+    margin-left: 675px;
+    margin-top: -82px;
+}
+#title2{
+    margin-left: 680px;
+    margin-top: -75px;
+}
+
+#about-description{
+    margin-left: 614px;
+    margin-top: -67px;
+}
 .headings{
     font-size: 50px;
     text-decoration: none;
-    color: #5D001E;
+    color: #FDFCFE;
     display: block;
     width: 250px;
 }
@@ -56,47 +121,60 @@ html{
     color: #EE4C7C;
 }
 .pixel{
-    width: 1000px;
-    height: 700px;
-    margin-left: 84px;
-    margin-top: 34px;
     position: relative;
+    height: 800px;
 }
 .photo{
     position: absolute;
+    scale: 1;
 }
-
-#moon{
-    width: 250px;
-    height: 500px;
-    top: 50px;
-    left: 120px;
+.photo:hover{
+    scale: 1.5;
+    transform: scale(1.1);
+    overflow: hidden;
+    z-index: 22;
 }
-#cloud{
-    width: 500px;
-    height: 250px;
-    top: 50px;
+#jungle{
+    width: 608px;
+    height: 446px;
+    top: 123px;
     left: 375px;
-}
-#forest{
-    width: 500px;
-    height: 250px;
-    top: 300px;
-    left: 375px;
+    z-index: 20;
 }
 #npc{
     width: 250px;
     height: 250px;
-    top: 50px;
+    top: 204px;
     left: 880px;
 }
 #npc1{
     width: 250px;
     height: 250px;
-    top: 300px;
-    left: 880px;
+    top: 204px;
+    left: 173px;
 }
-
+.arrow{
+    width: 20px;
+    height: 20px;;
+    top: 322px;
+    fill: #FDFCFE;
+    margin-top: 236px; 
+}
+.arrow:hover{
+    fill: #EE4C7C;
+}
+.left{
+    transform: scale(-1,1);  
+}
+.left:hover{
+    transform: scale(-1,1);
+}
+.right{
+    margin-left: 50px;
+}
+.animation{
+    height: 500px;
+}
 .gifs{
     position: absolute;
    
@@ -109,8 +187,11 @@ html{
     top: 81px;
     left: 606px;
 }
-#footer{
+
+footer{
     position: absolute;
     bottom: 0;
-    height: 20px;
+    margin: auto;
+    height: 90px;
+    color: #FDFCFE;
 }
