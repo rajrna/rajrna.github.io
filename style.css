@@ -1,0 +1,291 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d0d0d;
+  color: #e5e5e5;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+a {
+  color: #e5e5e5;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  padding: 10px;
+}
+
+header.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #0d0d0d;
+  padding: 1rem;
+  z-index: 10;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: #e5e5e5;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff4d4d;
+  text-shadow: 0 0 8px #ff4d4d;
+  border: #ff4d4d solid;
+  border-radius: 10%;
+}
+
+button {
+  background-color: #ff0000;
+  color: #0d0d0d;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff4d4d;
+  box-shadow: 0 0 15px #ff4d4d;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex; /* Enables Flexbox */
+  flex-direction: column; /* Stacks content vertically */
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+  height: 100vh; /* Full viewport height */
+  background-color: #0d0d0d; /* Black background */
+  color: white; /* White text */
+  margin: 0; /* Removes default margin */
+}
+
+.hero-content {
+  text-align: left; /* Ensures all text starts at the same position */
+  max-width: 600px; /* Limits width for readability */
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content .intro-text {
+  font-size: 2rem; /* Slightly smaller size */
+  font-weight: normal;
+  color: #ff0000; /* White text */
+  margin-bottom: 0.5rem;
+}
+.hero-content .name-text {
+  font-size: 3rem; /* Larger size */
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.hero-content .highlight {
+  color: #ff0000;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #ddd; /* Light gray text for better contrast */
+}
+
+.hero-content .unemployed {
+  color: red;
+  font-weight: bold;
+}
+
+.hire-me-btn {
+  border: #ff0000 solid;
+  position: absolute;
+  margin-top: 10px;
+  background-color: #ff0000;
+}
+
+.hire-me-btn:hover {
+  border: #ff4d4d solid;
+  transform: scale(1.3);
+}
+
+/* Hero Section and Centered Layout for All Sections */
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  padding: 5rem 10%;
+  text-align: center;
+}
+
+section h1,
+section h2 {
+  font-size: 2.5rem;
+  color: #ff0000;
+  margin-bottom: 2rem;
+}
+
+section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#about {
+  padding: 5rem 10%;
+  background-color: #111;
+  color: #fff;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.about-text {
+  flex: 1 1 60%; /* Take up 60% width or adjust based on screen size */
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  /* color: #00ffcc; */
+  color: #ff4d4d;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.about-text ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.about-text li {
+  font-size: 1rem;
+  color: #ccc;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.about-text li::before {
+  content: "▸";
+  color: #00ffcc;
+  /* color: #ff0000; */
+  position: absolute;
+  left: 0;
+}
+
+.about-image {
+  flex: 1 1 35%; /* Take up 35% width or adjust based on screen size */
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Specific Section Customization */
+#projects .project {
+  margin-bottom: 1.5rem;
+}
+
+#projects .project h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+#projects .project p {
+  font-size: 1rem;
+}
+
+.social-links {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links .icon {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-size: contain;
+}
+
+.github {
+  background-image: url("icons/github-icon.png");
+}
+
+.instagram {
+  background-image: url("icons/instagram-icon.png");
+}
+
+.linkedin {
+  background-image: url("icons/linkedin-icon.png");
+}
+
+/* Scroll Hint */
+.scroll-hint {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: gray;
+}
+
+.scroll-hint .arrow-down {
+  margin-top: 0.5rem;
+  width: 20px;
+  height: 20px;
+  border-bottom: 2px solid gray;
+  border-right: 2px solid gray;
+  transform: rotate(45deg);
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: rotate(45deg) translateY(0);
+  }
+  50% {
+    transform: rotate(45deg) translateY(10px);
+  }
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #111;
+  color: #888;
+}
