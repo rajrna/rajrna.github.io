@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import 'tailwindcss';
+/* eslint-ignore next line */
+@theme {
+  --font-ibmplex: 'IBM Plex Mono', sans-serif;
+  /* Smoky Black Shades */
+  --color-smoky-black: #0e0300;
+  --color-smoky-black-100: #030100;
+  --color-smoky-black-200: #060100;
+  --color-smoky-black-300: #090200;
+  --color-smoky-black-400: #0c0300;
+  --color-smoky-black-500: #0e0300;
+  --color-smoky-black-600: #721900;
+  --color-smoky-black-700: #d52e00;
+  --color-smoky-black-800: #ff6439;
+  --color-smoky-black-900: #ffb19c;
+
+  /* Licorice Shades */
+  --color-licorice: #110302;
+  --color-licorice-100: #040100;
+  --color-licorice-200: #070101;
+  --color-licorice-300: #0b0201;
+  --color-licorice-400: #0f0302;
+  --color-licorice-500: #110302;
+  --color-licorice-600: #6a130c;
+  --color-licorice-700: #c22217;
+  --color-licorice-800: #ea5a50;
+  --color-licorice-900: #f5ada7;
+
+  /* Off Red Shades */
+  --color-off-red: #f10f03;
+  --color-off-red-100: #300300;
+  --color-off-red-200: #610601;
+  --color-off-red-300: #910901;
+  --color-off-red-400: #c20c02;
+  --color-off-red-500: #f10f03;
+  --color-off-red-600: #fd372d;
+  --color-off-red-700: #fd6961;
+  --color-off-red-800: #fe9b96;
+  --color-off-red-900: #fecdca;
+
+  /* Smoky Black Alt Shades */
+  --color-smoky-black-alt: #080400;
+  --color-smoky-black-alt-100: #020100;
+  --color-smoky-black-alt-200: #040200;
+  --color-smoky-black-alt-300: #060300;
+  --color-smoky-black-alt-400: #080400;
+  --color-smoky-black-alt-500: #080400;
+  --color-smoky-black-alt-600: #6e3700;
+  --color-smoky-black-alt-700: #d26900;
+  --color-smoky-black-alt-800: #ff9b37;
+  --color-smoky-black-alt-900: #ffcd9b;
+
+  /* Platinum Shades */
+  --color-platinum: #e9e7e9;
+  --color-platinum-100: #302d30;
+  --color-platinum-200: #615961;
+  --color-platinum-300: #908790;
+  --color-platinum-400: #bcb7bc;
+  --color-platinum-500: #e9e7e9;
+  --color-platinum-600: #edeced;
+  --color-platinum-700: #f2f1f2;
+  --color-platinum-800: #f6f5f6;
+  --color-platinum-900: #fbfafb;
+
+  /* Engineering Orange Shades */
+  --color-engineering-orange: #bb160e;
+  --color-engineering-orange-100: #250403;
+  --color-engineering-orange-200: #4a0906;
+  --color-engineering-orange-300: #6f0d08;
+  --color-engineering-orange-400: #94120b;
+  --color-engineering-orange-500: #bb160e;
+  --color-engineering-orange-600: #ee2218;
+  --color-engineering-orange-700: #f25951;
+  --color-engineering-orange-800: #f6918b;
+  --color-engineering-orange-900: #fbc8c5;
+
+  /* Flat customs */
+  --color-accent: #ef4444;
+  --gray-font: #f1faee;
+  --font-brand: 'IBM Plex Mono', monospace;
+}
+
+/* :root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
