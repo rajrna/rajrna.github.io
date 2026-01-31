@@ -1,6 +1,14 @@
 import { useState } from 'react';
 import Navbar from './Navbar';
 import FlickerCanvas from './FlickerCanvas';
+import TypeWriterV1 from '../components/TypeWriterV1';
+import About from '../components/About';
+
+// const texts = [
+//   'unemployed',
+//   'open to new opportunities',
+//   'looking for my next challenge',
+// ];
 
 function AppLayout() {
   const [page, setPage] = useState('about');
@@ -11,7 +19,9 @@ function AppLayout() {
         <header className="shrink-0">
           <Navbar active={page} onNav={setPage} />
         </header>
-        <main className="text-red-50">Hello</main>
+        <main className="text-red-50">
+          <About />
+        </main>
       </div>
     </div>
   );
