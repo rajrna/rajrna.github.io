@@ -6,12 +6,9 @@ const words = [
   'looking for my next challenge',
 ];
 
-export default function Typewriter({
-  className,
-}) {
+export default function Typewriter({ className }) {
   const [text, setText] = useState('');
-  const [isDeleting, setIsDeleting] =
-    useState(false);
+  const [isDeleting, setIsDeleting] = useState(false);
   const [wordIndex, setWordIndex] = useState(0);
   const [speed] = useState(100);
   // const [speed, setSpeed] = useState(100);
@@ -22,36 +19,21 @@ export default function Typewriter({
 
     if (isDeleting) {
       timer = setTimeout(() => {
-        setText(
-          currentWord.substring(
-            0,
-            text.length - 1
-          )
-        );
+        setText(currentWord.substring(0, text.length - 1));
       }, speed / 2);
     } else {
       timer = setTimeout(() => {
-        setText(
-          currentWord.substring(
-            0,
-            text.length + 1
-          )
-        );
+        setText(currentWord.substring(0, text.length + 1));
       }, speed);
     }
 
     if (!isDeleting && text === currentWord) {
       // Pause at full word
-      timer = setTimeout(
-        () => setIsDeleting(true),
-        1500
-      );
+      timer = setTimeout(() => setIsDeleting(true), 1500);
     } else if (isDeleting && text === '') {
       // Move to next word
       setIsDeleting(false);
-      setWordIndex(
-        (wordIndex + 1) % words.length
-      );
+      setWordIndex((wordIndex + 1) % words.length);
     }
 
     return () => clearTimeout(timer);
