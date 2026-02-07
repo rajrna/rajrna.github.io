@@ -1,3 +1,6 @@
+import ProjectsHeading from './ProjectsHeading';
+import ProjectCard from './ProjectCard';
+
 const projects = [
   {
     stack: 'React JS CSS',
@@ -78,3 +81,18 @@ const projects = [
     ],
   },
 ];
+
+export default function Projects() {
+  return (
+    <div className="flex w-full flex-col">
+      <ProjectsHeading />
+      <div className="mx-auto w-full max-w-6xl px-6 py-6">
+        <div className="grid w-full gap-6 pb-8 sm:grid-cols-2 lg:grid-cols-3">
+          {projects.map((proj) => (
+            <ProjectCard key={proj.title} proj={proj} />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}

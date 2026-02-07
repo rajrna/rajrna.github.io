@@ -1,15 +1,10 @@
 import { useEffect, useState } from 'react';
 
 function Clock() {
-  const [now, setNow] = useState(
-    () => new Date()
-  );
+  const [now, setNow] = useState(() => new Date());
 
   useEffect(() => {
-    const timer = setInterval(
-      () => setNow(new Date()),
-      1000
-    );
+    const timer = setInterval(() => setNow(new Date()), 1000);
     return () => clearInterval(timer);
   }, []);
   const time = now.toLocaleTimeString(undefined, {
@@ -20,11 +15,10 @@ function Clock() {
   });
   return (
     <span
-      className="pl-2 text-sm text-red-500 md:text-xl"
+      className="pl-2 text-sm text-red-500 drop-shadow-[0_0_5px_rgba(220,38,38,0.5)] md:text-xl"
       style={{
         letterSpacing: '0.1em',
-        textShadow:
-          '0 0 3px #ff2222, 0 0 16px #911',
+        textShadow: '0 0 3px #ff2222, 0 0 16px #911',
         userSelect: 'none',
       }}
     >

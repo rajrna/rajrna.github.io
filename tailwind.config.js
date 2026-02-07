@@ -1,20 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 // eslint-disable-next-line
 export default {
-  content: [
-    './index.html',
-    './src/**/*.{js,ts,jsx,tsx}',
-  ],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     fontFamily: {
       sans: 'IBM Plex Mono, monospace',
     },
     extend: {
-      colors: {
-        pizza: '#123456',
+      keyframes: {
+        flicker: {
+          '0%': { opacity: '0.99' },
+          '100%': { opacity: '1' },
+        },
       },
-      height: {
-        screen: '100dvh',
+      animation: {
+        flicker: 'flicker 0.1s infinite',
       },
     },
   },

@@ -15,7 +15,7 @@ function NavButton({ onNav, active }) {
         <button
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
-          className="text-white"
+          className="text-amber-200 hover:bg-red-950/20"
         >
           {/* Hamburger icon */}
           <svg
@@ -42,7 +42,7 @@ function NavButton({ onNav, active }) {
           <button
             key={link.id}
             onClick={() => onNav(link.id)}
-            className={`rounded border-t-3 border-b-2 border-transparent px-3 py-1 transition-colors duration-200 ${active === link.id ? 'text-off-red-500 border-off-red-500' : 'hover:text-off-red-500 hover:border-off-red-500 text-white'}`}
+            className={`rounded border-t-3 border-b-2 border-transparent px-3 py-1 transition-colors duration-200 ${active === link.id ? 'text-off-red-500 border-off-red-500 drop-shadow-[0_0_5px_rgba(220,38,38,0.5)]' : 'hover:text-off-red-500 hover:border-off-red-500 text-amber-100 drop-shadow-[0_0_5px_rgba(220,38,38,0.5)]'}`}
           >
             {link.label}
           </button>
