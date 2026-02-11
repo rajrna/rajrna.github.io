@@ -17,7 +17,7 @@ export default function ProjectCard({ proj }) {
         {proj.title}
       </h3>
 
-      <div className="grow font-mono text-sm leading-relaxed text-slate-400 group-hover:text-slate-200">
+      <div className="grow font-mono text-sm leading-relaxed text-amber-100 group-hover:text-slate-200">
         {isLocked ? (
           <div className="border border-red-900/30 bg-red-950/20 p-2 text-red-700 italic">
             [ ERROR ] DATA_ENCRYPTED: {proj.desc}
@@ -37,7 +37,7 @@ export default function ProjectCard({ proj }) {
             className={`flex-1 border py-2 text-center font-mono text-[10px] font-bold tracking-widest uppercase transition-all ${
               link.type === 'github'
                 ? 'border-red-900 text-red-600 hover:bg-red-600 hover:text-black'
-                : 'border-white/40 text-white hover:bg-white hover:text-black'
+                : 'border-white/40 text-amber-100 hover:bg-amber-100 hover:text-black'
             }`}
           >
             {link.label} _EXEC

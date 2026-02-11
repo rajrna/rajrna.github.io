@@ -1,23 +1,3 @@
-// function ExperienceItem({ experience }) {
-//   return (
-//     <>
-//       <div>
-//         <span>{experience.role}</span>
-//         <span>
-//           {experience.company} - {experience.location}
-//         </span>
-//       </div>
-//       <div>
-//         <span>{experience.duration}</span>
-//       </div>
-//       <ul>
-//         {experience.highlights.map((highlight, i) => (
-//           <li key={i}>{highlight}</li>
-//         ))}
-//       </ul>
-//     </>
-//   );
-// }
 function ExperienceItem({ experience }) {
   return (
     <div className="group relative mb-12 border-l-2 border-red-900/30 pl-6 transition-all hover:border-red-600">
@@ -47,10 +27,10 @@ function ExperienceItem({ experience }) {
         {experience.highlights.map((highlight, i) => (
           <li
             key={i}
-            className="flex items-start text-sm leading-relaxed text-slate-300/90 md:text-base"
+            className="flex items-start text-sm leading-relaxed text-amber-100 md:text-base"
           >
             <span className="mt-2.5 mr-3 h-1 w-4 shrink-0 bg-red-600/60 shadow-[0_0_5px_rgba(220,38,38,0.5)]"></span>
-            <span className="transition-colors group-hover:text-white">
+            <span className="transition-colors group-hover:text-amber-50">
               {highlight}
             </span>
           </li>

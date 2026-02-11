@@ -42,7 +42,7 @@ export default function SkillItem({ name, category, status }) {
       </div>
 
       {/* 2. Metadata: Category */}
-      <div className="col-span-3 self-center text-[10px] tracking-widest text-slate-500 uppercase">
+      <div className="col-span-3 self-center text-[10px] tracking-widest text-amber-100 uppercase">
         {category}
       </div>
 

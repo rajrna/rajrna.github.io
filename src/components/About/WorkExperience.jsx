@@ -42,24 +42,13 @@ const experiences = [
   },
 ];
 
-// function WorkExperience() {
-//   return (
-//     <>
-//       <h3>Work Experience</h3>
-//       {experiences.map((experience) => (
-//         <ExperienceItem key={experience.num} experience={experience} />
-//       ))}
-//     </>
-//   );
-// }
 function WorkExperience() {
   return (
     <div className="my-16 w-full max-w-5xl">
-      {/* Section Header matching 'Subject_Capabilities' */}
       <div className="mb-10 flex items-end justify-between border-b-4 border-red-600/40 pb-2">
-        <h3 className="text-4xl font-black tracking-tighter text-red-600 uppercase md:text-5xl">
+        <h2 className="text-2xl font-black tracking-tighter text-red-600 uppercase md:text-3xl">
           Employment_History
-        </h3>
+        </h2>
         <span className="mb-2 font-mono text-xs text-red-900 uppercase">
           Ver: 2026.02
         </span>
@@ -71,7 +60,6 @@ function WorkExperience() {
         ))}
       </div>
 
-      {/* Section Footer */}
       <div className="mt-8 border-t border-red-900/20 pt-4 font-mono text-[10px] tracking-[0.4em] text-red-900/40 uppercase">
         End of Dossier // User_ID: Rana_R
       </div>
